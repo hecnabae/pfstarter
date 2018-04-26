@@ -20,6 +20,9 @@ dependencies {
 
     // PRIMEFACES
     compile "org.primefaces:primefaces:6.2"
+    compile(group: 'org.primefaces.extensions', name: 'primefaces-extensions', version: '6.2.4') {
+        exclude(module: 'primefaces')
+    }
 
     // EXTERNAL UTILITY TOOLS
     compile "commons-io:commons-io:2.2"
